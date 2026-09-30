@@ -111,3 +111,21 @@ h2{
     background-color: var(--secondary-color);
     cursor: pointer;
 }
+
+.header_image{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: calc(50% - 5rem);
+    padding-top: 6rem;
+    background-color: var(--white);
+    z-index: -1;
+    overflow: hidden;
+}
+
+.header_image img{
+    width: 100%;
+    display: flex;
+    max-width: 600px;
+}
