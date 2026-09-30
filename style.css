@@ -18,3 +18,57 @@ body{
     background-color: var(--primary-color);
     overflow-x: hidden;
 }
+
+a{
+    text-decoration: none;
+}
+
+.header_container{
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+}
+
+nav{
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_logo a{
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.nav_links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.link a{
+    position: relative;
+    padding-bottom: 5px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-color-darck);
+}
+
+.link a::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--secondary-color);
+  transition: 0.3s;
+}
+
+.link a:hover::after{
+    width: 100%;
+}
